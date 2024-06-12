@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Lego Clicker</title>
+  <link rel="icon" type="image/x-icon" href="bric.jpeg">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+  <div class='sectionLeft unselectable'>
+    <center>
+      <div class='scoreContainer'>
+        <p>Legos: <span id="legos">0</span></p>
+
+        <p>Legos per Second: <span id="legospersecond">0</span></p>
+      </div>
+      <br>
+      <div class='clickerContainer unselectable'>
+        <div id="clicker">
+          <img src='images/bric.png'>
+        </div>
+      </div>
+    </center>
+
+    <div class="sectionFooter unselectable">
+      <h3>Lego Clicker</h3>
+      <button onclick='resetGame()'>Reset Game</button>
+    </div>
+  </div>
+
+
+  <div class='sectionRight unselectable'>
+    <div id='upgradeContainer'></div>
+    <div id='shopContainer'></div>
+  </div>
+
+  <script src="script.js"></script>
+  <!--Has to stay at bottom for ordering issues-->
+</body>
+
+</html>
